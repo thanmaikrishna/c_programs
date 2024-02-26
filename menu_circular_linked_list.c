@@ -15,6 +15,23 @@ newnode->next=NULL:
   return newnode;
 }
 nd *start=NULL;
+void insert_begin(int);
+void insert_after(int,int);
+void insert_end(int);
+void delete_start();
+void delete_after(int);
+void delete_last();
+void traverse();
+void search(int);
+int main(){
+  int ch;
+  int v,v1;
+  while(1){
+    printf("1:insert at start\t2:insert after the input value\t3:insert at the end\n")
+    printf("4:delete start\t5:delete after the input value\t6:delete last\n");
+    printf("7:traverse the list\t8:search for element\n");
+  }
+
 //inserting a node at the beginning
 void insert_begin(int v){
 nd *temp=start;
