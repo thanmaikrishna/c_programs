@@ -60,6 +60,14 @@ int main(){
       case 6:
       printf("deleting last node\n");
       delete_last();
+      case 7:
+        printf("elements in the list are: \n");
+        traverse();
+        break;
+      case 8:
+        printf("input element to search: ");
+        scanf("%d",&v);
+        search(v);
       break;
   }
 
