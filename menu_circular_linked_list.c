@@ -30,6 +30,37 @@ int main(){
     printf("1:insert at start\t2:insert after the input value\t3:insert at the end\n")
     printf("4:delete start\t5:delete after the input value\t6:delete last\n");
     printf("7:traverse the list\t8:search for element\n");
+    switch(ch){
+      case 1:
+      printf("enter value to insert : ");
+      scanf("%d",&v);
+      insert_start(v);
+      break;
+      case 2:
+      printf("provide after which value to be inserted: ");
+      scanf("%d",v);
+      printf("enter value to insert : ");
+      scanf("%d",&v1);
+      insert_after(v1);
+      break;
+      case 3:
+      printf("enter value to insert: ");
+      scanf("%d",&v);
+      insert_end(v);
+      break;
+      case 4:
+      printf("deleting first node\n");
+      delete_start();
+      break;
+      case 5:
+      printf("provide after which value to delete: ");
+      scanf("%d",&v);
+      delete_after(v);
+      break;
+      case 6:
+      printf("deleting last node\n");
+      delete_last();
+      break;
   }
 
 //inserting a node at the beginning
