@@ -17,7 +17,14 @@ void insert_start(int);
 void insert_after(int,int);
 void insert_end(int);
 void delete_start();
+void delete_input(int);
 void delete_after(int);
 void delete_last();
 void traverse();
 void search(int);
+int main(){
+  int ch,v,v1;
+while(1){
+printf("1:insert at start\t2:insert after provided value\t3:insert at end\n");
+printf("4:delete start\t5:delete provided value\t6:delete after provided value\t7:delete last\n");
+printf("8:traverse\t9:search for any value in the list\n");
