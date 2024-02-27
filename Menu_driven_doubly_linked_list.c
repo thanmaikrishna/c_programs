@@ -8,6 +8,10 @@ struct Node *next;
 typedef struct Node node;
 node *start=NULL;
 node *getnode(){
+  node *newnode=(node*)malloc(sizeof(node));
+  newnode->prev=NULL;
+  newnode->next=NULL;
+  return newnode;
 }
 void insert_start(int);
 void insert_after(int,int);
