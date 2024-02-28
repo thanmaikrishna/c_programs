@@ -33,9 +33,19 @@ case 1: printf("enter inserting value: ");
 scanf("%d",v);
 insert_start(v);
 break;
-case 2: printf("after which value do you want to insert: ");
+case 2: 
+printf("after which value do you want to insert: ");
 scanf("%d",v1);
 printf("enter insert value: ");
 scanf("%d",&v);
 insert_after(v1,v);
+break;
+case 3:
+printf("enter insert element: ");
+scanf("%d",&v);
+insert_last(v);
+break;
+case 4:
+printf("deleting first element\n");
+delete_start();
 break;
