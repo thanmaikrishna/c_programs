@@ -28,3 +28,14 @@ while(1){
 printf("1:insert at start\t2:insert after provided value\t3:insert at end\n");
 printf("4:delete start\t5:delete provided value\t6:delete after provided value\t7:delete last\n");
 printf("8:traverse\t9:search for any value in the list\n");
+switch(ch){
+case 1: printf("enter inserting value: ");
+scanf("%d",v);
+insert_start(v);
+break;
+case 2: printf("after which value do you want to insert: ");
+scanf("%d",v1);
+printf("enter insert value: ");
+scanf("%d",&v);
+insert_after(v1,v);
+break;
