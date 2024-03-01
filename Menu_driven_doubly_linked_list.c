@@ -49,3 +49,9 @@ case 4:
 printf("deleting first element\n");
 delete_start();
 break;
+case 5:
+printf("enter value to delete: ");
+scanf("%d",&v);
+delete_input(v);
+break;
+
