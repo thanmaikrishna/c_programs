@@ -54,4 +54,8 @@ printf("enter value to delete: ");
 scanf("%d",&v);
 delete_input(v);
 break;
-
+case 6:
+printf("provide value to delete after: ");
+scanf("%d",&v);
+delete_after(v);
+break;
