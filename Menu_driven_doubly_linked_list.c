@@ -59,3 +59,7 @@ printf("provide value to delete after: ");
 scanf("%d",&v);
 delete_after(v);
 break;
+case 7:
+printf("deleting last value");
+delete_last();
+break;
