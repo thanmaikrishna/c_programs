@@ -67,3 +67,8 @@ case 8:
 printf("elements in the list are: \n");
 traverse();
 break;
+case 9:
+printf("enter element to search for: ");
+scanf("%d",&v);
+search(v);
+break;
