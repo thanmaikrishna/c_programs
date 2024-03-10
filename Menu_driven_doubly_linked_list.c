@@ -60,6 +60,10 @@ scanf("%d",&v);
 delete_after(v);
 break;
 case 7:
-printf("deleting last value");
+printf("deleting last value\n");
 delete_last();
+break;
+case 8:
+printf("elements in the list are: \n");
+traverse();
 break;
