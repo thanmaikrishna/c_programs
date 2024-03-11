@@ -72,3 +72,7 @@ printf("enter element to search for: ");
 scanf("%d",&v);
 search(v);
 break;
+}
+}
+return 0;
+}
