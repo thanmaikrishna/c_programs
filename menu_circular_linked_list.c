@@ -130,7 +130,7 @@ printf("not found\n");
 //deleting the first node
 void delete_start(){
   nd *temp1=start;
-nd temp2=start;
+nd *temp2=start;
 if(start==NULL){
 printf("underflow\n");
 return;
