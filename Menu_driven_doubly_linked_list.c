@@ -1,4 +1,8 @@
 //menu driven doubly linked list
+//         ___     __     __
+//NULL <--|   |-->|  |-->|  |-->NULL
+//start-->|   |<--|  |<--|  |
+//         ___    __     __
 #include<stdio.h>
 struct Node{
 struct Node *prev;
