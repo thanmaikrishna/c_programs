@@ -150,7 +150,7 @@ if(start==NULL){
 printf("underflow\n");
 return;
 }
-while(temp->next==start){
+while(temp->next!=start){
 if(temp->data==v){
 prev=temp;
 temp=temp->next;
@@ -160,10 +160,13 @@ free(temp);
 return;
 }
 prev=temp;
-temp=temmp->next;
+temp=temp->next;
 }
+    //deleting start
 if((temp->next==start) && (temp->data)==v){
-prev->next=start;
+temp->next=start->next;
+  temp=start;
+  start=start->next;
   temp->next=NULL;
   free(temp);
 }
@@ -184,7 +187,3 @@ prev->next=start;
 temp->next=NULL;
 free(temp);
 }
-
-
-
-
